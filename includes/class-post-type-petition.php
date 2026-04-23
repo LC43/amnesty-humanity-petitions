@@ -353,7 +353,7 @@ class Post_Type_Petition {
 	 * @return array
 	 */
 	protected function args(): array {
-		$template = apply_filters( 'amnesty_petitions_template', [ 'amnesty/petition-template' ] );
+		$template = apply_filters( 'amnesty_petitions_template', [ [ 'amnesty/petition-template' ] ] );
 
 		return [
 			'labels'              => $this->labels(),
